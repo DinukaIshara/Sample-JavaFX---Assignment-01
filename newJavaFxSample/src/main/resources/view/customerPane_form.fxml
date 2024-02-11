@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="customerNode" prefHeight="527.0" prefWidth="729.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.newJavaFxSample.controller.CustomerPaneFormController">
+   <children>
+      <ImageView fitHeight="541.0" fitWidth="757.0" layoutX="-6.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/thoga%20kade%20customer%20img.jpg" />
+         </image>
+         <effect>
+            <MotionBlur radius="7.0" />
+         </effect>
+      </ImageView>
+      <Label layoutX="90.0" layoutY="88.0" text="Customer ID " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField layoutX="91.0" layoutY="125.0" prefHeight="42.0" prefWidth="435.0" style="-fx-background-radius: 15;" />
+      <TextField layoutX="91.0" layoutY="240.0" prefHeight="42.0" prefWidth="435.0" style="-fx-background-radius: 15;" />
+      <TextField layoutX="91.0" layoutY="355.0" prefHeight="42.0" prefWidth="435.0" style="-fx-background-radius: 15;" />
+      <JFXButton buttonType="RAISED" layoutX="495.0" layoutY="436.0" prefHeight="42.0" prefWidth="142.0" style="-fx-background-color: lightblue; -fx-background-radius: 20;" text="Add Details" />
+      <Label layoutX="92.0" layoutY="212.0" text="Customer Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="99.0" layoutY="332.0" text="Customer Address" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

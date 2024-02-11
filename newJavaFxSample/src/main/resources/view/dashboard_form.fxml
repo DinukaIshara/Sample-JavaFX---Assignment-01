@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" prefHeight="628.0" prefWidth="1016.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.newJavaFxSample.controller.DashboardFormController">
+   <children>
+      <ImageView fitHeight="135.0" fitWidth="141.0" layoutX="58.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icon/user.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="88.0" layoutY="141.0" text="User Name" />
+      <JFXButton buttonType="RAISED" layoutX="22.0" layoutY="174.0" onAction="#btnDashboardOnAction" prefHeight="71.0" prefWidth="215.0" style="-fx-background-color: #393E46 #393E46; -fx-background-radius: 15;" text="Dashboard" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="22.0" layoutY="519.0" onAction="#btnLogOutOnAction" prefHeight="71.0" prefWidth="215.0" style="-fx-background-color: #393E46; -fx-background-radius: 30;" text="Log out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane fx:id="rootNodePane" layoutX="262.0" layoutY="81.0" prefHeight="527.0" prefWidth="729.0" style="-fx-background-radius: 20; -fx-background-color: #E0F4FF;" />
+      <JFXButton buttonType="RAISED" layoutX="22.0" layoutY="255.0" onAction="#btnCustomerOnAction" prefHeight="71.0" prefWidth="215.0" style="-fx-background-color: #393E46 #393E46; -fx-background-radius: 15;" text="Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="21.0" layoutY="335.0" onAction="#btnItemOnAction" prefHeight="71.0" prefWidth="215.0" style="-fx-background-color: #393E46; -fx-background-radius: 15;" text="Item" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="21.0" layoutY="416.0" onAction="#btnSuppliersOnAction" prefHeight="71.0" prefWidth="215.0" style="-fx-background-color: #393E46; -fx-background-radius: 15;" text="Suppliers" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXTextArea fx:id="textMainLab" focusColor="#053feb" layoutX="508.0" layoutY="9.0" prefHeight="51.0" prefWidth="262.0" unFocusColor="#ffffff00">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </JFXTextArea>
+   </children>
+</AnchorPane>
